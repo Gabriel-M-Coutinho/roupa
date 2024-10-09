@@ -31,7 +31,7 @@ public class AuthenticationController {
     private TokenService tokenService;
 
     @PostMapping("/login")
-    public ResponseEntity login(@RequestBody AuthenticationDTO request) {
+    public ResponseEntity<?> login(@RequestBody AuthenticationDTO request) {
         UsernamePasswordAuthenticationToken usernamePassword = new UsernamePasswordAuthenticationToken(
                 request.username(),
                 request.password()
@@ -44,7 +44,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity register(@RequestBody RegisterDTO request) {
+    public ResponseEntity<?> register(@RequestBody RegisterDTO request) {
         String name = request.name();
         String username = request.username();
         String email = request.email();

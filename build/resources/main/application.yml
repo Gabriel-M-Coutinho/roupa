@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/clothes_store
     username: postgres
-    password:
+    password: 1238425wky22
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
