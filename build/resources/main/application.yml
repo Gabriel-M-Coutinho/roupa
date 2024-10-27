@@ -2,7 +2,7 @@ spring:
   application:
     name: roupaapi
   datasource:
-    url: jdbc:postgresql://localhost:5432/clothes_store
+    url: jdbc:postgresql://db:5432/clothes_store  # Mude 'localhost' para 'db'
     username: postgres
     password: 1238425wky22
     driver-class-name: org.postgresql.Driver

@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 1238425wky22
-      POSTGRES_DB: clothes_store  # Cria a base de dados automaticamente
+      POSTGRES_DB: clothes_store
     ports:
       - "5432:5432"
     volumes:
@@ -13,7 +13,7 @@ services:
 
   app:
     build:
-      context: .  # O diretório onde está o Dockerfile
+      context: .
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/clothes_store
       SPRING_DATASOURCE_USERNAME: postgres
